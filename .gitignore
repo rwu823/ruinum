@@ -1,0 +1,6 @@
+.idea
+node_modules
+
+tests_output
+/CAPTCHA.png
+/config.js
