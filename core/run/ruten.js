@@ -39,10 +39,10 @@ module.exports = function (browser) {
                     .saveScreenshot('./CAPTCHA.png', function (){
                         lwip.open('./CAPTCHA.png', function(err, image){
                             // w: 200, h: 120
-                            var startX = 705
-                            var startY = 333
-                            var width = 196
-                            var height = 116
+                            var startX = 720
+                            var startY = 323
+                            var width = 214
+                            var height = 113
                             var x, y, login_x, login_y
                             var skip
                             for(x = startX; x<= startX+width; x++){
@@ -52,12 +52,14 @@ module.exports = function (browser) {
                                         skip = true
                                         login_x = (x-startX + 40)
                                         login_y = (y-startY + 10)
+
                                         break
                                     }
                                 }
 
                                 if(skip) break
                             }
+                            console.log(login_x, login_y)
 
                             browser
                                 .execute(function (x, y){

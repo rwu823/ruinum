@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "java -jar ./bin/selenium-server-standalone-2.47.1.jar",
-    "start": "nightwatch -c ./nightwatch.json -e chrome -t ./run/index.js"
+    "start": "nightwatch -c ./nightwatch.json -t ./run/index.js"
   },
   "author": "Rocky Wu <rocky823@gmail.com>",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "glob": "^5.0.6",
     "gulp": "latest",
     "lodash": "^3.8.0",
-    "lwip": "0.0.7",
-    "nightwatch": "^0.7.9"
+    "lwip": "0.0.8",
+    "nightwatch": "^0.7.11"
   }
 }
